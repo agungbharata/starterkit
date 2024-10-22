@@ -25,11 +25,13 @@ class DashboardPanelProvider extends PanelProvider
     {
         return $panel
             ->default()
+            ->spa()
             ->id('dashboard')
             ->path('dashboard')
             ->login()
             ->colors([
-                'primary' => Color::Amber,
+                'primary' => Color::Cyan,
+                'gray' => Color::Slate,
             ])
             ->plugins([
                 FilamentShieldPlugin::make()
